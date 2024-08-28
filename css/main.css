@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--secondcolor--);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+:root {
+  --firstcolor--: #000;
+  --secondcolor--: #fff;
+  --thirdcolor--: grey;
+  --fontfamily--: Jetbrains Mono;
+}
+
+.darkmode {
+  --firstcolor--: #fff;
+  --secondcolor--: #000;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 150px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav img {
+  width: 70px;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+header nav .navigation {
+  padding: 50px 0;
+  display: flex;
+  gap: 35px;
+}
+header nav .navigation li a {
+  font-size: 26px;
+  color: var(--firstcolor--);
+  font-family: var(--fontfamily--);
+}
+header nav .theme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+}
+header nav .theme img {
+  width: 55px;
+}
+header nav .menu img {
+  display: none;
+}
+header .modal {
+  display: none;
+}
+
+main {
+  padding: 50px 0;
+}
+main .content {
+  border-radius: 15px;
+  padding: 25px;
+  border: 2px solid blue;
+  box-shadow: 5px 5px 15px;
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+main .content li p {
+  font-family: var(--fontfamily--);
+  color: var(--firstcolor--);
+  font-size: 16px;
+}
+main .content img {
+  width: 250px;
+  background: transparent;
+}
+main .content-2 {
+  margin: 50px auto;
+}
+
+footer {
+  padding: 0 0 15px;
+}
+footer .foot {
+  padding: 20px 50px;
+  background: var(--firstcolor--);
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .foot a {
+  text-transform: uppercase;
+  color: var(--secondcolor--);
+  font-family: var(--fontfamily--);
+  font-weight: 800;
+}
+
+@media (max-width: 415px) {
+  header .container {
+    max-width: 414px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  header nav {
+    justify-content: space-between;
+    padding-top: 20px;
+  }
+  header nav .js {
+    display: none;
+  }
+  header nav .navigation {
+    display: none;
+  }
+  header nav .menu {
+    background-color: white;
+  }
+  header nav .menu img {
+    display: inline;
+    width: 50px;
+    height: 50px;
+  }
+  header .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  header .modal .closeBtn {
+    position: fixed;
+    top: 25px;
+    right: 20px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+  }
+  header .modal .modal-nav {
+    padding-top: 150px;
+    display: grid;
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+  }
+  header .modal .modal-nav .btn-div {
+    display: flex;
+    gap: 25px;
+  }
+  header .modal .modal-nav .btn-div button {
+    padding: 10px 20px;
+    font-family: var(--fontfamily--);
+    text-transform: uppercase;
+    font-weight: 800;
+    background-color: var(--secondcolor--);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  header .modal .modal-nav li a {
+    color: var(--secondcolor--);
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: var(--fontfamily--);
+  }
+  main {
+    padding: 20px 0;
+  }
+  main .content {
+    border: none;
+    box-shadow: none;
+    display: grid;
+    text-align: center;
+    justify-content: center;
+  }
+  main .content-2 {
+    margin: 25px 0;
+  }
+  main .content-1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .content-1 p {
+    width: 280px;
+  }
+  main .content-3 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  main .content-3 p {
+    width: 280px;
+  }
+  footer .foot {
+    padding: 20px 20px;
+    border-radius: 0;
+    width: 412px;
+    margin-left: -150px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
